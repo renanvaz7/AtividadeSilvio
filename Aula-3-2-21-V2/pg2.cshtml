@@ -1,0 +1,37 @@
+﻿<style>
+    p{
+        position: relative;
+        float: left;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <title>Aula 3/2/2021</title>
+</head>
+<body>    
+
+    @{
+        List<string> cores = new List<string>()
+        {
+        "blue", "yellow", "green", "red", "black"
+        };
+
+        foreach (string obj in cores)
+        {
+            <p style="background-color:@obj"> </p>
+        }
+
+        for (int i = 0; i < 5; i++)
+        {
+            <p></p>
+        }
+    }
+</body>
+</html>

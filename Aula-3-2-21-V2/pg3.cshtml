@@ -1,0 +1,23 @@
+﻿@{ 
+    List<string> nomes = new List<string>()
+        {
+        "Marcelo", "Maicon", "Carla", "Fernanda", "Chico"
+        };
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <select>
+        @{
+            foreach (string obj in nomes)
+            {
+                <option value="@obj">@obj</option>
+            }
+
+        }
+    </select>
+</body>
+</html>
